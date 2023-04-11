@@ -62,7 +62,16 @@ class HomeView extends StatelessWidget {
                       ),
                     ),
                     trailing: const Icon(Icons.arrow_forward_ios),
-                    onTap: () {},
+                    onTap: () {
+                      Get.back();
+                      Get.bottomSheet(
+                        Container(
+                          height: 600,
+                          color: Colors.white,
+                          child: const Text('Halo'),
+                        ),
+                      );
+                    },
                   ),
                 ),
                 Card(
